@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/src/style.css"/>
+    <title>🥷🏼 kaiden.</title>
+</head>
+<body>
+<!-- Noise Gradient -->
+<canvas id="noise" class="pointer-events-none fixed top-0 left-0 z-[99999] h-full w-full opacity-[0.1]"></canvas>
+
+<!-- Container -->
+<div class="mx-auto my-0 mt-[70px] animate-[fadeBlur_2.5s_ease-in-out_forwards] xl:my-0 xl:w-[1200px] 2xl:w-[1400px]">
+
+    <!-- Header -->
+    <header class="my-[72px] xl:mx-[72px] xl:flex xl:justify-between 2xl:mx-[72px] xl:[align-items:initial]">
+        <div class="mx-auto my-0 mb-18 w-[330px] xl:flex xl:flex-col xl:justify-between xl:[margin:initial] xl:[padding-left:initial] xl:[width:initial] pointer-events-none">
+            <h1 class="color-white my-[30px] font-normal font-sans text-[44px] xl:m-0 xl:w-[800px] xl:text-[106px] xl:leading-[124px]">
+                I enjoy creating
+                <span class="-skew-x-[16deg] inline-block font-semibold text-[44px] leading-tight tracking-tighter xl:text-[106px] xl:leading-[124px]">
+              digital
+            </span>
+                products.
+            </h1>
+            <div class="xl:mt-[72px] xl:flex">
+                <div class="w-[300px] xl:[width:initial]">
+                    <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 1C5 0.447715 5.44772 0 6 0H9C9.55228 0 10 0.447715 10 1V2H14C14.5523 2 15 2.44772 15 3V6C15 6.8888 14.6131 7.68734 14 8.23608V11.5C14 12.3284 13.3284 13 12.5 13H2.5C1.67157 13 1 12.3284 1 11.5V8.2359C0.38697 7.68721 0 6.88883 0 6V3C0 2.44772 0.447716 2 1 2H5V1ZM9 1V2H6V1H9ZM1 3H5H5.5H9.5H10H14V6C14 6.654 13.6866 7.23467 13.1997 7.6004C12.8655 7.85144 12.4508 8 12 8H8V7.5C8 7.22386 7.77614 7 7.5 7C7.22386 7 7 7.22386 7 7.5V8H3C2.5493 8 2.1346 7.85133 1.80029 7.60022C1.31335 7.23446 1 6.65396 1 6V3ZM7 9H3C2.64961 9 2.31292 8.93972 2 8.82905V11.5C2 11.7761 2.22386 12 2.5 12H12.5C12.7761 12 13 11.7761 13 11.5V8.82915C12.6871 8.93978 12.3504 9 12 9H8V9.5C8 9.77614 7.77614 10 7.5 10C7.22386 10 7 9.77614 7 9.5V9Z"
+                              fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="m-0 mt-2 font-bold">Current Experience</p>
+                    <p class="m-0 mt-1 text-[#7c7c83]">
+                        Associate Frontend Engineer II @ Pleo
+                    </p>
+                </div>
+                <div class="mt-11 xl:ml-[72px] xl:[margin-top:initial]">
+                    <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 3.5C10 4.70948 9.14112 5.71836 8 5.94999V13.5C8 13.7761 7.77614 14 7.5 14C7.22386 14 7 13.7761 7 13.5V5.94999C5.85888 5.71836 5 4.70948 5 3.5C5 2.11929 6.11929 1 7.5 1C8.88071 1 10 2.11929 10 3.5Z"
+                              fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="m-0 mt-2 font-bold">Location</p>
+                    <p class="m-0 mt-1 text-[#7c7c83]">Berlin</p>
+                </div>
+                <div class="mt-11 hidden xl:ml-[72px] xl:block xl:[margin-top:initial]">
+                    <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.50009 0.877014C3.84241 0.877014 0.877258 3.84216 0.877258 7.49984C0.877258 11.1575 3.8424 14.1227 7.50009 14.1227C11.1578 14.1227 14.1229 11.1575 14.1229 7.49984C14.1229 3.84216 11.1577 0.877014 7.50009 0.877014ZM1.82726 7.49984C1.82726 4.36683 4.36708 1.82701 7.50009 1.82701C10.6331 1.82701 13.1729 4.36683 13.1729 7.49984C13.1729 10.6328 10.6331 13.1727 7.50009 13.1727C4.36708 13.1727 1.82726 10.6328 1.82726 7.49984ZM8 4.50001C8 4.22387 7.77614 4.00001 7.5 4.00001C7.22386 4.00001 7 4.22387 7 4.50001V7.50001C7 7.63262 7.05268 7.7598 7.14645 7.85357L9.14645 9.85357C9.34171 10.0488 9.65829 10.0488 9.85355 9.85357C10.0488 9.65831 10.0488 9.34172 9.85355 9.14646L8 7.29291V4.50001Z"
+                              fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="m-0 mt-2 font-bold">Local Time</p>
+                    <!-- Clock Component -->
+                    <div x-data="{
+                            time: '',
+                            getTime() {
+                              return new Date().toLocaleTimeString('en-US', {
+                                timeZone: 'Europe/Berlin',
+                                hour: '2-digit',
+                                minute: '2-digit',
+                                hour12: false,
+                              });
+                            }
+                        }"
+                         x-init="time = getTime();
+                            setInterval(() => {
+                              time = getTime();
+                            }, 1000 - (Date.now() % 1000));">
+                        <p class="m-0 mt-1 text-[#7c7c83]" x-text="time || '00:00'"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects -->
+    <section class="mx-[72px] mb-[72px] xl:flex xl:flex-wrap 2xl:w-[1400px]">
+
+        <!-- Triple Feedback -->
+        <div class='card-base mt-[initial] flex flex-col items-center justify-center xl:[display:initial]'>
+            <a href="https://apps.apple.com/gb/app/pleo/id1110743278" target="_blank" rel="noreferrer"
+               class="decoration-none">
+                <div class="multi-gradient mt-[72px] flex h-[700px] w-[350px] items-center justify-center rounded-[44px] bg-foreground xl:mt-[initial] xl:h-[612px] xl:w-[366px] 2xl:w-[491px]">
+                    <video class="h-auto w-[270px] rounded-3xl shadow-xl xl:w-[230px]"
+                           aria-label="triple feedback project video" playsInline autoPlay muted loop>
+                        <source src="https://qg4jfsqsfxj4pwmc.public.blob.vercel-storage.com/triple-feedback-NiTKjzZu9G6yQThFPFw1oH1UzxDXyq.mp4"
+                                type="video/mp4"/>
+                    </video>
+                </div>
+                <div class="w-[350px] xl:mt-6 xl:flex xl:w-[initial] xl:flex-col">
+                    <p class="mx-0 mt-6 mb-4 xl:m-0 2xl:my-[initial]">
+                        Self-serve Feedback Reporting
+                    </p>
+                    <p class="m-0 text-[#7c7c83] xl:max-w-[366px] 2xl:max-w-[491px]">
+                        Enhanced reporting of incorrect vendor data for Pleo customers,
+                        shifting from a manual process to a self-serve experience. Available on iOS, Android and in the
+                        Web app.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <!-- ezcmd -->
+        <div class='card-base flex flex-col items-center justify-center xl:ml-[72px] xl:[display:initial]'>
+            <a href="https://github.com/neiforfaen/ezcmd" target="_blank" rel="noreferrer" class="decoration-none">
+                <div class="mt-[72px] flex h-[350px] w-[350px] items-center justify-center rounded-[44px] bg-foreground xl:mt-[initial] xl:h-[612px] xl:w-[618px] 2xl:w-[690px] dark:bg-[#403DFF]">
+                    <video class="h-auto w-[270px] rounded-3xl shadow-xl xl:w-[550px]" aria-label="ezcmd project video"
+                           playsInline autoPlay muted loop>
+                        <source src="https://qg4jfsqsfxj4pwmc.public.blob.vercel-storage.com/Screen%20Recording%202025-06-01%20at%2001.39.01-niJfWAt1JLKjx5a7kWcOlhb8pf4Py2.mp4"
+                                type="video/mp4"/>
+                    </video>
+                </div>
+                <div class="w-[350px] xl:mt-6 xl:flex xl:w-[initial] xl:flex-col">
+                    <p class="mx-0 mt-6 mb-4 xl:m-0 2xl:my-[initial]">EZCMD</p>
+                    <p class="m-0 text-[#7c7c83] xl:max-w-[618px] 2xl:max-w-[690px]">
+                        A documented RESTful API for easily creating formatted message commands for use on
+                        various streaming platforms.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section x-data="{
+        experiments: [
+        {
+            name: 'dotfiles',
+            description: 'Dotfiles to configure my development environment and tools so that I can work effectively on any machine.',
+            github: 'https://github.com/neiforfaen/dotfiles'
+        },
+        {
+            name: 'website',
+            description: 'My personal website, originally built with next.js + tailwind in a monorepo setup to further explore the concept of monorepos.',
+            github: 'https://github.com/neiforfaen/website',
+        }
+        ]
+    }" class="my-[72px] xl:mx-[72px] xl:flex xl:justify-between 2xl:mx-[72px] xl:[align-items:initial]">
+        <div class="mx-auto my-0 mb-18 w-[350px] xl:w-full xl:flex xl:flex-col xl:justify-between xl:[margin:initial] xl:[padding-left:initial]">
+            <h2 class="color-white my-[30px] font-normal font-sans text-[44px] xl:m-0 xl:w-[800px] xl:text-[106px] xl:leading-[124px] pointer-events-none">
+                Experiments
+            </h2>
+            <div class="flex flex-col xl:mt-[36px] mx-[2px] xl:mx-1">
+                <template x-for="(experiment, i) in experiments" :key="i">
+                    <div class="mb-12 flex w-full justify-between">
+                        <div class="pointer-events-none max-w-[280px] xl:max-w-full">
+                            <h3 class="font-semibold text-[24px] text-white" x-text="experiment.name"></h3>
+                            <p class="text-[#7c7c83]" x-text="experiment.description"></p>
+                        </div>
+                        <div class="mt-10 xl:my-auto flex gap-6">
+                            <template x-if="experiment.link">
+                                <a :href="experiment.link" rel="noreferrer" target="_blank">
+                                    <svg width="28" height="28" viewBox="0 0 15 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.62471 4.00001L4.56402 4.00001C4.04134 3.99993 3.70687 3.99988 3.4182 4.055C2.2379 4.28039 1.29846 5.17053 1.05815 6.33035C0.999538 6.61321 0.999604 6.93998 0.999703 7.43689L0.999711 7.50001L0.999703 7.56313C0.999604 8.06004 0.999538 8.38681 1.05815 8.66967C1.29846 9.8295 2.2379 10.7196 3.4182 10.945C3.70688 11.0001 4.04135 11.0001 4.56403 11L4.62471 11H5.49971C5.77585 11 5.99971 10.7762 5.99971 10.5C5.99971 10.2239 5.77585 10 5.49971 10H4.62471C4.02084 10 3.78907 9.99777 3.60577 9.96277C2.80262 9.8094 2.19157 9.21108 2.03735 8.46678C2.00233 8.29778 1.99971 8.08251 1.99971 7.50001C1.99971 6.91752 2.00233 6.70225 2.03735 6.53324C2.19157 5.78895 2.80262 5.19062 3.60577 5.03725C3.78907 5.00225 4.02084 5.00001 4.62471 5.00001H5.49971C5.77585 5.00001 5.99971 4.77615 5.99971 4.50001C5.99971 4.22387 5.77585 4.00001 5.49971 4.00001H4.62471ZM10.3747 5.00001C10.9786 5.00001 11.2104 5.00225 11.3937 5.03725C12.1968 5.19062 12.8079 5.78895 12.9621 6.53324C12.9971 6.70225 12.9997 6.91752 12.9997 7.50001C12.9997 8.08251 12.9971 8.29778 12.9621 8.46678C12.8079 9.21108 12.1968 9.8094 11.3937 9.96277C11.2104 9.99777 10.9786 10 10.3747 10H9.49971C9.22357 10 8.99971 10.2239 8.99971 10.5C8.99971 10.7762 9.22357 11 9.49971 11H10.3747L10.4354 11C10.9581 11.0001 11.2925 11.0001 11.5812 10.945C12.7615 10.7196 13.701 9.8295 13.9413 8.66967C13.9999 8.38681 13.9998 8.06005 13.9997 7.56314L13.9997 7.50001L13.9997 7.43688C13.9998 6.93998 13.9999 6.61321 13.9413 6.33035C13.701 5.17053 12.7615 4.28039 11.5812 4.055C11.2925 3.99988 10.9581 3.99993 10.4354 4.00001L10.3747 4.00001H9.49971C9.22357 4.00001 8.99971 4.22387 8.99971 4.50001C8.99971 4.77615 9.22357 5.00001 9.49971 5.00001H10.3747ZM5.00038 7C4.72424 7 4.50038 7.22386 4.50038 7.5C4.50038 7.77614 4.72424 8 5.00038 8H10.0004C10.2765 8 10.5004 7.77614 10.5004 7.5C10.5004 7.22386 10.2765 7 10.0004 7H5.00038Z"
+                                              fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </template>
+                            <a :href="experiment.github" rel="noreferrer" target="_blank">
+                                <svg width="28" height="28" viewBox="0 0 15 15" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.49933 0.25C3.49635 0.25 0.25 3.49593 0.25 7.50024C0.25 10.703 2.32715 13.4206 5.2081 14.3797C5.57084 14.446 5.70302 14.2222 5.70302 14.0299C5.70302 13.8576 5.69679 13.4019 5.69323 12.797C3.67661 13.235 3.25112 11.825 3.25112 11.825C2.92132 10.9874 2.44599 10.7644 2.44599 10.7644C1.78773 10.3149 2.49584 10.3238 2.49584 10.3238C3.22353 10.375 3.60629 11.0711 3.60629 11.0711C4.25298 12.1788 5.30335 11.8588 5.71638 11.6732C5.78225 11.205 5.96962 10.8854 6.17658 10.7043C4.56675 10.5209 2.87415 9.89918 2.87415 7.12104C2.87415 6.32925 3.15677 5.68257 3.62053 5.17563C3.54576 4.99226 3.29697 4.25521 3.69174 3.25691C3.69174 3.25691 4.30015 3.06196 5.68522 3.99973C6.26337 3.83906 6.8838 3.75895 7.50022 3.75583C8.1162 3.75895 8.73619 3.83906 9.31523 3.99973C10.6994 3.06196 11.3069 3.25691 11.3069 3.25691C11.7026 4.25521 11.4538 4.99226 11.3795 5.17563C11.8441 5.68257 12.1245 6.32925 12.1245 7.12104C12.1245 9.9063 10.4292 10.5192 8.81452 10.6985C9.07444 10.9224 9.30633 11.3648 9.30633 12.0413C9.30633 13.0102 9.29742 13.7922 9.29742 14.0299C9.29742 14.2239 9.42828 14.4496 9.79591 14.3788C12.6746 13.4179 14.75 10.7025 14.75 7.50024C14.75 3.49593 11.5036 0.25 7.49933 0.25Z"
+                                          fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mx-[72px] flex items-center justify-end py-8 pointer-events-none">
+        <p class="text-[#7c7c83]/30 text-xs">built with alpine.js + tailwind</p>
+    </footer>
+
+</div>
+
+<!-- Main + Alpine.js Init -->
+<script type="module" src="/src/main.ts"></script>
+
+</body>
+</html>

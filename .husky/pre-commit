@@ -1,0 +1,11 @@
+pnpm format
+if [ $? -ne 0 ]; then
+  echo "Formatting failed, aborting commit."
+  exit 1
+fi
+echo "Formatting completed successfully."
+
+pnpm lint
+echo "Linting completed successfully."
+
+echo "Commiting changes..."
