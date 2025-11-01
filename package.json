@@ -18,7 +18,7 @@
     "husky": "^9.1.7",
     "typescript": "~5.9.3",
     "ultracite": "^5.4.6",
-    "vite": "^7.1.7"
+    "vite": "^7.1.12"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
