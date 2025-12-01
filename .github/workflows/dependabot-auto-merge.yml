@@ -13,6 +13,6 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: Merge Dependabot PRs
         run: gh pr merge "${GITHUB_HEAD_REF}" --merge --auto
